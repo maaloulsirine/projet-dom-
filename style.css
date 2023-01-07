@@ -1,0 +1,36 @@
+
+
+.logo{
+  font-size: 90px;
+  font-weight: 600;
+  line-height: 90px;
+  text-align: center;
+  height: 120px;
+  display:flex;
+  margin-left: 50px;
+ 
+}
+#header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+padding: 20px 80px;
+background-color:mintcream;
+box-shadow: 0 5px 15px rgba(0 ,0,0,0.06);
+}
+h1{
+  color:black;
+  padding-left: 25px;
+  font-size: 40px;
+  
+}
+#navbar{
+  display: flex;
+ align-items: center;
+ justify-content: center;
+ margin-bottom: 180px;
+}
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
+}
