@@ -1,36 +1,413 @@
-
-
-.logo{
-  font-size: 90px;
-  font-weight: 600;
-  line-height: 90px;
-  text-align: center;
-  height: 120px;
-  display:flex;
-  margin-left: 50px;
+body{
+  width: 100%;
+  
  
 }
+
 #header{
   display: flex;
   align-items: center;
   justify-content: space-between;
-padding: 20px 80px;
-background-color:mintcream;
-box-shadow: 0 5px 15px rgba(0 ,0,0,0.06);
+  padding: 20px 80px;
+  background-color:#E8DDF0;
+  box-shadow:  0 5px 15px rgba(0, 0, 0, 0.6);
+  z-index:999 ;
+  position: sticky;
+  top: 0;
+  left: 0;
+
 }
-h1{
-  color:black;
-  padding-left: 25px;
-  font-size: 40px;
-  
+.drop-menu{
+  display: none;
+}
+.menu-item:hover.drop-menu{
+  display: flex;
+  flex-direction: column;
+}
+
+#header h1 {
+  cursor: pointer;
 }
 #navbar{
   display: flex;
- align-items: center;
- justify-content: center;
- margin-bottom: 180px;
+  align-items: center;
+  justify-content: center;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 500;
+  
 }
 #navbar li {
   list-style: none;
   padding: 0 20px;
+  position: relative;
+}
+#navbar li a{
+text-decoration: none;
+font-size: 16px;
+font-weight: 600;
+color:black; 
+transition: 0.3s ease; 
+}
+
+#navbar li a:hover ,
+#navbar li a.active {
+  color:darkorchid ;
+
+}
+#navbar li a.active::after,
+#navbar li a:hover::after {
+  content: " ";
+  width: 30%;
+  height: 2px;
+  background:darkorchid;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+  /* home page */
+#main{
+  
+ background-image: url("https://static.e-stradivarius.net/5/cms/assets/uploads/2400Newin_105.jpg?imwidth=1900&impolicy=stradivarius-itxmediumhigh&ts=20230112054240");
+ height: 80vh;
+ width: 100%;
+ background-size:cover; 
+ background-position: top 25 right 0;
+ padding:0 80px ;
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ justify-content: center; 
+text-align: center;
+}
+ #main h4 {
+  
+  font-size: 25px;
+  color: aliceblue;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style:italic;
+ }
+ #main h1 {
+  color: darkorchid;
+  font-size: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style:italic;
+ }
+ #main h2{
+    font-size: 40px;
+    color: aliceblue;
+    font-family:"open sans", sans-serif,serif;
+    font-style:italic;
+
+
+ }
+ #main p{
+  color:black;
+  font-size: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+ #main button {
+  background-image: url("gra.jpg");
+  background-color: transparent;
+  color:#E3E6F3;
+  border: 0;
+  margin: 14px 80px 14px 65px;
+  padding: 10px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 15px;
+display:inline-flex;
+outline-style:outset;
+
+ }
+
+.image{
+  width: 130px;
+}
+h6{
+  font-size: 12;
+  font-weight: 700;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.section-p1{
+  padding: 40px 80px;
+}
+
+#footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+#footer .fe-box.img{
+  margin-bottom: 10px;
+}
+#footer .fe-box{
+  width: 180px;
+  text-align:center ;
+  padding: 25px 15px;
+  box-shadow: 20px 20px 34 rgba(0, 0, 0, 0.6);
+  border: 1px solid #cce7d0;
+  border-radius: 4px;
+  margin: 15px 0;
+  cursor: pointer;
+
+}
+#footer .fe-box:hover{
+  box-shadow: 10px 10px 54px rgba(70,62,221,0.1);
+}
+
+
+#footer .fe-box h6{
+  display: inline-block;
+  padding: 9px 8px 6px 8px;
+  line-height: 1;
+  border-radius: 4px;
+  color:darkorchid;
+  background-color:lightpink;
+}
+
+#footer .fe-box:nth-child(2) h6{
+  
+  background-color:lavender;
+}
+#footer .fe-box:nth-child(3) h6{
+  
+  background-color:lightgreen;
+}
+
+#footer .fe-box:nth-child(4) h6{
+  
+  background-color:lightblue;
+}
+
+#footer .fe-box:nth-child(5) h6{
+  
+  background-color:khaki;
+}
+#footer .fe-box:nth-child(6) h6{
+  
+  background-color:lightsalmon;
+}
+
+
+
+
+#product1{
+  
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style:italic;
+  text-align: center;
+
+
+  
+
+}
+#product1 h2 {
+  font-size: 50px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+cursor: pointer;
+}
+#product1 p {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#product1 .pro{
+  width: 23%;
+  min-width: 250px;
+  padding: 10px 12px ;
+  border: 1px solid #cce7d0;
+  cursor: pointer;
+  border-radius: 25px;
+  box-shadow: 20px 20px 30px rgb(0,0,0,0.02); 
+  margin: 15px 0;
+  transition: 0.2s ease;
+}
+
+#product1 .pro:hover{
+
+ box-shadow: 20px 20px 30px rgb(0,0,0,0.06); 
+}
+
+
+#product1 .pro img{
+  width: 100%;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 15px 0 ;
+}
+
+
+
+#product1 .pro-container{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  flex-wrap: wrap;
+  
+}
+
+#product1 .pro.des{
+  text-align: start;
+  padding: 10px 0 ;
+
+}
+
+.bershka{
+  color:black;
+  font-size: 20x;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-style: italic;
+
+}
+
+.go{
+  padding-top: 7px;
+  color:brown;
+  font-size: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+.s4 {
+  padding-top: 7px;
+  font-size: 20px;
+  font-weight: 700;
+  color: blueviolet;
+  text-align: center;
+}
+
+.shopping{
+  font-size: 1px;
+  width: 0px;
+  text-align: center;
+justify-content: center;
+
+  
+}
+
+
+.section-m1{
+  margin: 40px 0;
+}
+
+#banner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url("paille.jpeg");
+}
+
+
+#banner h4{
+  color: #E8DDF0;
+  font-size: 20px;
+}
+
+
+#banner h2 { 
+  color: #E8DDF0;
+  font-size: 70;
+  padding: 10px 0;
+}
+
+#banner h2 span {
+  color:yellow;
+}
+
+
+
+.normal{
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color:black;
+  background-color:aliceblue;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+  outline-style:dotted;
+}
+
+
+#banner button:hover{
+  background:slateblue;
+  color:yellow;
+
+}
+#newsletters {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-image: url("footer.jpeg");
+ 
+}
+
+#newsletters  h4 {
+  font-size: 30px;
+  color: blueviolet;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+
+}
+
+#newsletters  p {
+  font-size: 20;
+  color:yellow;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+
+}
+#newsletters  input {
+height: 3.125rem;
+padding: 0 1.25;
+font-size: 100%;
+border: 1px solid transparent;
+border-radius: 4px;
+outline: none;
+border-top-right-radius: 0;
+border-bottom-left-radius: 0;
+
+}
+#newsletters  button{
+  background-color:burlywood;
+  color:blueviolet;
+  white-space: nowrap;
+  border-top-left-radius: 0;
+border-bottom-left-radius: 0;
+
+}
+
+#newsletters .from{
+  display: flex;
+  width: 40px;
+}
+
+.btn-cont {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100px;
+  height: 40px;
+  background: transparent;
+  border: 0.2px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 20px rgba(43, 42, 42, 0.5);
+  margin-top: 20px;
+  border-radius: 40px;
+  margin-right: 20px;
+  align-items: center;
+  transform: translate(70px, -50%);
+  
+
+ 
 }
